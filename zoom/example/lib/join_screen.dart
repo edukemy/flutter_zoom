@@ -100,6 +100,8 @@ class _JoinWidgetState extends State<JoinWidget> {
         userId: 'example',
         meetingId: meetingIdController.text,
         meetingPassword: meetingPasswordController.text,
+       // webinarToken: "webinarToken" // Replace with the webinarToken got from the webinar invitation link query params ?tk="webinarToken"
+        //By passing the webinarToken, the signup dialog prompt is skipped.
         disableDialIn: "true",
         disableDrive: "true",
         disableInvite: "true",

@@ -100,6 +100,7 @@ class ZoomMeetingOptions {
   String noDisconnectAudio;
   String noAudio;
   int? meetingViewOptions;
+  String? webinarToken;
   String? jwtAPIKey; //--for web
   String? jwtSignature; //--for web
 
@@ -119,5 +120,6 @@ class ZoomMeetingOptions {
     this.meetingViewOptions,
     this.jwtAPIKey,
     this.jwtSignature,
+    this.webinarToken,
   });
 }

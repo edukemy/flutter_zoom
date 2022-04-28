@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   zoom_platform_interface:
-    path: ./
+    path: ../zoom_platform_interface/
   zoom_web: ^1.0.2+1
 
 dev_dependencies:

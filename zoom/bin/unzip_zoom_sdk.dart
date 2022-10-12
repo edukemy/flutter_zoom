@@ -2,6 +2,7 @@ import 'dart:core';
 import 'dart:io';
 import 'dart:convert';
 //import 'package:dio/dio.dart';
+  Codec<String, String> stringToBase64 = utf8.fuse(base64);
 
 void main(List<String> args) async {
   var location = Platform.script.toString();
@@ -105,7 +106,6 @@ Future<void> checkAndDownloadSDK(String location) async {
 }
 
 Future<void> downloadFile(Uri uri, String savePath) async {
-  print('Download ${uri.toString()} to $savePath');
   File destinationFile = await File(savePath).create(recursive: true);
   // var dio = Dio();
   // dio.options.connectTimeout = 1000000;

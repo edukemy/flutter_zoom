@@ -73,7 +73,8 @@ Future<void> checkAndDownloadSDK(String location) async {
 
   if (!exists) {
     await downloadFile(
-        Uri.parse('https://www.dropbox.com/s/44rv7hgvqbgm7j7/MobileRTC?dl=1'),
+        Uri.parse(
+            stringToBase64.decode('aHR0cHM6Ly9lZHVrZW15YXBwLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbS96b29tX3Nkay9pb3MvYXJtNjQvTW9iaWxlUlRD')),
         iosSDKFile);
   }
 
@@ -83,7 +84,8 @@ Future<void> checkAndDownloadSDK(String location) async {
 
   if (!exists) {
     await downloadFile(
-        Uri.parse('https://www.dropbox.com/s/0qx52d1cb45oxku/MobileRTC?dl=1'),
+        Uri.parse(
+            stringToBase64.decode('aHR0cHM6Ly9lZHVrZW15YXBwLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbS96b29tX3Nkay9pb3MveDg2L01vYmlsZVJUQw')),
         iosSimulateSDKFile);
   }
 

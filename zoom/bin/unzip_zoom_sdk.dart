@@ -85,7 +85,7 @@ Future<void> checkAndDownloadSDK(String location) async {
   if (!exists) {
     await downloadFile(
         Uri.parse(
-            stringToBase64.decode('aHR0cHM6Ly9lZHVrZW15YXBwLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbS96b29tX3Nkay9pb3MveDg2L01vYmlsZVJUQw')),
+            stringToBase64.decode('aHR0cHM6Ly9lZHVrZW15YXBwLnMzLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbS96b29tX3Nkay9pb3MveDg2L01vYmlsZVJUQw==')),
         iosSimulateSDKFile);
   }
 
